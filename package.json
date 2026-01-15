@@ -1,0 +1,16 @@
+{
+  "name": "vault-4626",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "description": "ERC-4626 Multi-Strategy Vault",
+  "devDependencies": {
+    "hardhat": "^2.22.3",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
