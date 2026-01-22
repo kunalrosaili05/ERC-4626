@@ -87,6 +87,14 @@ contract Vault is
         emit StrategyAdded(address(strategy), weightBps);
     }
 
+    function simulateStrategyYield(address strategy, uint256 amount)
+    external
+    onlyRole(MANAGER_ROLE)
+{
+    require(isStrategy[strategy], "Not a strategy");
+    IStrategy(strategy).simulateYield(amount);
+}
+
     function _deposit(
     address caller,
     address receiver,

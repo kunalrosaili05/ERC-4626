@@ -60,4 +60,10 @@ contract StrategyB is IStrategy {
     function unlockTime() external view returns (uint256) {
         return unlockAt;
     }
+
+    function simulateYield(uint256 /*amount*/) external override {
+    // StrategyB does not generate yield
+    // Intentionally left blank
+}
+
 }

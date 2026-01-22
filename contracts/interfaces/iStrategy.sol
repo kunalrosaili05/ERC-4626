@@ -19,4 +19,6 @@ interface IStrategy {
 
     function isLocked() external view returns (bool);
     function unlockTime() external view returns (uint256);
+    // ✅ TEST / MOCK ONLY
+    function simulateYield(uint256 amount) external;
 }
